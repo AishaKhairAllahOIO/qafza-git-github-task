@@ -1,4 +1,3 @@
-
 1. إنشاء SSH Key وربطه بحساب GitHub
 -إنشاء المفتاح:
 ننفذ الأمر التالي:
@@ -30,3 +29,14 @@ cd Desktop
 python3 -m venv venv  لمنع حدوث conflect بنسخ المكتبات المستخدمة في المشاريع بحيث نستطيع تجاهل الglobal env، واستخدامها عند تفعيلها بأمر:
 source venv\bin\activate 
 إنشاء ملف .gitignore عن طريق الأمر nano .gitignore الذي يفتح محرر الnano, نضيف الملفات التي نريد تجاهلها مثل البيئة الافتراضية والملفات ذات الحجم الكبير والبيئة الافتراضية والتي تحوي على مفاتيح ومعلومات سرية...
+إنشاء ملف README.md عن طريق الأمر  nano README.md وبداخله كتبت خطوات تنفيذ التاسك كما هو مطلوب 
+إنشاء ملف بايثون nano task.py وكتابة سطر برمجي بداخله وحفظه
+الآن نستطيع أن ننتقل إلى مرحلة الstaging ثم رفعها على الريموت 
+git add .
+git commit -m "something"
+git branch -M main لتغيير اسم الbranch منmaster إلى main
+git remote add origin git@github.com:AishaKhairAllahOIO/qafza-git-github-task.git
+git push -u origin main 
+الآن أصبح الريبو على الريموت، نستطيع إضافة أي شيء للملفات ورفعها للريموت الآن 
+
+تمّ بعون الله.
